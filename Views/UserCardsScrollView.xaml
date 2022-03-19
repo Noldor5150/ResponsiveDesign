@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ResponsiveDesign.Views.UserCardsScrollView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ResponsiveDesign.Views"
+             
+             xmlns:components="clr-namespace:ResponsiveDesign.Components"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="400"/>
+        </Grid.RowDefinitions>
+
+        <components:UserCard Grid.Row="0" Grid.Column="0" Margin="10" Username="Paulius Ruikis" Age="42" FavoriteColor="Blue"/>
+        <components:UserCard Grid.Row="0" Grid.Column="1" Margin="10" Username="Klaidas Ruikis" Age="15" FavoriteColor="Green"/>
+        <components:UserCard Grid.Row="0" Grid.Column="2" Margin="10" Username="Nikole Ruikyte" Age="17" FavoriteColor="Gold"/>
+
+        <components:UserCard Grid.Row="1" Grid.Column="0" Margin="10" Username="Paulius Ruikis" Age="42" FavoriteColor="Blue"/>
+        <components:UserCard Grid.Row="1" Grid.Column="1" Margin="10" Username="Klaidas Ruikis" Age="15" FavoriteColor="Green"/>
+        <components:UserCard Grid.Row="1" Grid.Column="2" Margin="10" Username="Nikole Ruikyte" Age="17" FavoriteColor="Gold"/>
+
+        <components:UserCard Grid.Row="2" Grid.Column="0" Margin="10" Username="Paulius Ruikis" Age="42" FavoriteColor="Blue"/>
+        <components:UserCard Grid.Row="2" Grid.Column="1" Margin="10" Username="Klaidas Ruikis" Age="15" FavoriteColor="Green"/>
+        <components:UserCard Grid.Row="2" Grid.Column="2" Margin="10" Username="Nikole Ruikyte" Age="17" FavoriteColor="Gold"/>
+    </Grid>
+</UserControl>
